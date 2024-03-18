@@ -11,9 +11,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
@@ -22,6 +21,8 @@ import DialogActions from "@mui/material/DialogActions";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { Link as ScrollLink } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMedal } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -55,7 +56,7 @@ const Navbar = () => {
     },
     {
       text: "Achievements",
-      icon: <CommentRoundedIcon />,
+      icon: <FontAwesomeIcon icon={faMedal} />,
     },
     {
       text: "Contact",
@@ -63,14 +64,14 @@ const Navbar = () => {
     },
     {
       text: "Sponsorship",
-      icon: <ShoppingCartRoundedIcon />,
+      icon: <MonetizationOnIcon />,
     },
   ];
 
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="netxus_logo"  />
+        <img src={Logo} alt="netxus_logo" />
       </div>
       <div className="navbar-links-container">
         {menuOptions.map((option) => (
@@ -86,7 +87,9 @@ const Navbar = () => {
             {option.text}
           </ScrollLink>
         ))}
-        <button className="primary-button" onClick={handleOpenFormPopup}>Booking Now</button>
+        <button className="primary-button" onClick={handleOpenFormPopup}>
+          Booking Now
+        </button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -115,8 +118,10 @@ const Navbar = () => {
       <Dialog open={openDialog} onClose={handleCloseDialog}>
         <DialogTitle>Why Sponsorship?</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            NetXus aims to transform access to clean, sustainable energy in Nigeria and beyond. With 65% of Nigerian students facing daily energy poverty due to extensive power outages, our innovative renewable energy solutions offer a vital solution. By combining solar energy with human power, we deliver reliable and affordable energy, benefiting households, businesses, and educational institutions. However, to achieve our goals, we need sponsorship to scale our operations and reach more communities. By sponsoring NetXus, you're investing in a brighter, more sustainable future, creating opportunities for education, economic growth, and environmental preservation. Together, we can make a meaningful impact, lighting up lives one charge at a time. For sponsorship inquiries, please contact us at <a href="mailto:yekinirasheed2002@gmail.com">yekinirasheed2002@gmail.com</a> or visit our <a href="https://www.linkedin.com/company/netxus">LinkedIn page</a>.
+          <DialogContentText style={{ textAlign: "justify", lineHeight: "1.5" }}>
+            NetXus aims to transform access to clean, sustainable energy in Nigeria and beyond. With 65% of Nigerian students facing daily energy poverty due to extensive power outages, our innovative renewable energy solutions offer a vital solution. By combining solar energy with human power, we deliver reliable and affordable energy, benefiting households, businesses, and educational institutions. However, to achieve our goals, we need sponsorship to scale our operations and reach more communities. By sponsoring NetXus, you're investing in a brighter, more sustainable future, creating opportunities for education, economic growth, and environmental preservation. Together, we can make a meaningful impact, lighting up lives one charge at a time. For sponsorship inquiries, please contact us at{" "}
+            <a href="mailto:yekinirasheed2002@gmail.com" target="_blank" rel="noreferrer noopener">yekinirasheed2002@gmail.com</a> or visit our{" "}
+            <a href="https://www.linkedin.com/company/netxus" target="_blank" rel="noreferrer noopener">LinkedIn page</a>.
           </DialogContentText>
         </DialogContent>
         <DialogActions>

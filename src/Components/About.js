@@ -26,7 +26,7 @@ const About = () => {
       <div className="about-section-text-container">
         <h1 className="primary-subheading">About</h1>
         <h4 className="primary-heading">
-          Consistent Power essential for Students and businesses
+          Consistent Power is essential for Students and businesses
         </h4>
         <p className="primary-text">
           At NetXus, We merge solar energy with human power to create renewable

@@ -17,7 +17,7 @@ const Home = () => {
             Your Favourite IoT Enabled Renewable & Sustainable Power Station
           </h1>
           <p className="primary-text">
-            We're one stop energy solutions for institutions and businesses. We light up lives one charge at a time
+            We are one stop energy solutions for institutions and businesses. We light up lives one charge at a time
           </p>
           <button className="secondary-button">
             Join Us <FiArrowRight />{" "}
