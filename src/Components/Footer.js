@@ -14,8 +14,9 @@ const Footer = () => {
         </div>
         <div className="footer-icons">
           <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
+          <a href="https://www.linkedin.com/company/netxus/" target="_blank" rel="noreferrer noopener"><SiLinkedin /></a>
+          <a href="https://youtu.be/4JGMg_c39us?si=9Djf0hoBkpRfVJZO" target="_blank" rel="noreferrer noopener"><BsYoutube /></a>
+          
           <FaFacebookF />
         </div>
       </div>
@@ -29,7 +30,7 @@ const Footer = () => {
           <span>Work</span>
         </div>
         <div className="footer-section-columns" height="15">
-          <span>LinkedIn</span>
+          <a href="https://www.linkedin.com/company/netxus/" target="_blank" rel="noreferrer noopener"><span>LinkedIn</span></a>
           <span>University of Ibadan</span>
           <span>Ibadan, Oyo State</span>
         </div>
