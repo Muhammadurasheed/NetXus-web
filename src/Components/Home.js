@@ -14,7 +14,7 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Your Favourite IoT Enabled Renewable & Sustainable Power Station
+            Your Favourite IoT-enabled Renewable & Sustainable Power Station
           </h1>
           <p className="primary-text">
             We are one stop energy solutions for institutions and businesses. We light up lives one charge at a time

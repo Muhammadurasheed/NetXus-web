@@ -13,18 +13,18 @@ const Work = () => {
     {
       image: phones,
       title: "Mobile Phones",
-      text: "Can fully charge average Nigerians phones up to 30 times",
+      text: "Can fully charge average Nigerians phones up to 30 times.",
     },
     {
       image: freezers,
       title: "Freezers",
-      text: "Capable of powering modern freezers with power rating of 100 - 200 watts",
+      text: "Capable of powering modern freezers with power rating of 100 - 200 watts.",
     },
   ];
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Capacity</p>
+        <h1 className="primary-subheading">NetXus Capacity</h1>
         <h1 className="primary-heading">What can NetXus do?</h1>
         <p className="primary-text">
           Our product boasts an impressive power output of 40KWh when fully charged, which means it can:
